@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(51, 43, 55);
+  font-family: "Press Start 2P", cursive;
+}
+
+.game-title {
+  color: #ffcc01;
+  -webkit-text-stroke: 1px #355fac;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.pokemon-battle-container {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.character {
+  width: 300px;
+  border: 3px solid #000721;
+  margin-bottom: 5rem;
+}
+
+.pokemon-player-name {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.pokemon-enemy-name {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.img-container {
+  background: #000721;
+  margin: 1.3rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.img-container img {
+  width: 200px;
+  padding: 2rem;
+}
+
+.health {
+  text-align: center;
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+.character-bottom-card {
+  background: #000721;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  padding: 3rem 0;
+}
+
+.dice-container {
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.dice-number {
+  font-size: 24px;
+}
+
+button {
+  font-size: 21px;
+  padding: 10px;
+  background: #ffcc01;
+  color: #355fac;
+  border: none;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .game-title {
+    font-size: 38px;
+  }
+
+  .pokemon-battle-container {
+    flex-direction: column;
+  }
+}
